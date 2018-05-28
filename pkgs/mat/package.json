@@ -1,0 +1,10 @@
+{
+  "name": "@nwx/mat",
+  "description": "A simple shared material module for Angular applications",
+  "peerDependencies": {
+    "@angular/core": "^6.0.0",
+    "hammerjs": "^2.0.8",
+    "@angular/material": "^6.1.0",
+    "@angular/cdk": "^6.1.0"
+  }
+}

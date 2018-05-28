@@ -1,0 +1,9 @@
+{
+  "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
+  "dest": "../../builds/nwx-mat",
+  "lib": {
+    "flatModuleFile": "nwx-mat",
+    "entryFile": "index.ts",
+    "umdModuleIds": {}
+  }
+}
