@@ -14,6 +14,7 @@
 # How to use
 
 ```typescript
+// in app.component.ts
 import { Component, OnInit } from '@angular/core';
 import { MatService } from '@nwx/mat';
 import { SvgIcons } from './app.icons';
@@ -47,6 +48,7 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
+    // assuming you have your svg icons in your project asset directory
     this.mat.loadSvgIconSet('/assets/svg/mdi/mdi.svg');
     this.mat.loadSvgIconsInNamespace(SvgFlagIcons);
   }
@@ -54,13 +56,15 @@ export class AppComponent implements OnInit {
 ```
 
 ```html
+<!-- in app.component.html -->
+
 <!-- material design modules -->
 <mat-toolbar>@nwx/mat</mat-toolbar>
 
 <h1> Welcome to {{ title }}!</h1>
 
 <!-- icons without namespace -->
-<mat-icon color="primary" svgIcon="github-face"></mat-icon> Github Repo
+<mat-icon color="primary" svgIcon="github-face"></mat-icon>
 
 <!-- icons with namespace -->
 <mat-icon color="primary" svgIcon="flags:ca"></mat-icon>

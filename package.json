@@ -1,6 +1,6 @@
 {
   "name": "@nwx/mat",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/neekware/nwx-mat.git"
@@ -46,6 +46,7 @@
     "@angular/common": "^6.0.0",
     "@angular/compiler": "^6.0.0",
     "@angular/core": "^6.0.0",
+    "@angular/flex-layout": "^6.0.0-beta.15",
     "@angular/forms": "^6.0.0",
     "@angular/http": "^6.0.0",
     "@angular/material": "^6.1.0",
