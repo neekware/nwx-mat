@@ -1,6 +1,6 @@
 # @nwx/mat
 
-**A simple shared material module for Angular applications**
+**A simple material module wrapper for Angular applications**
 
 [![status-image]][status-link]
 [![version-image]][version-link]
