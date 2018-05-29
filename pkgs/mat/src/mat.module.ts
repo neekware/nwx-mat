@@ -12,7 +12,6 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 import 'hammerjs';
 
-import { FlexLayoutModule } from '@angular/flex-layout';
 import { A11yModule } from '@angular/cdk/a11y';
 import { CdkAccordionModule } from '@angular/cdk/accordion';
 import { BidiModule } from '@angular/cdk/bidi';
@@ -66,7 +65,6 @@ import { MatService } from './mat.service';
     CommonModule,
     ReactiveFormsModule,
     FormsModule,
-    FlexLayoutModule,
     MatAutocompleteModule,
     MatButtonModule,
     MatButtonToggleModule,
@@ -113,7 +111,6 @@ import { MatService } from './mat.service';
     CommonModule,
     ReactiveFormsModule,
     FormsModule,
-    FlexLayoutModule,
     MatAutocompleteModule,
     MatButtonModule,
     MatButtonToggleModule,
