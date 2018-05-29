@@ -1,6 +1,6 @@
 {
   "name": "@nwx/mat",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/neekware/nwx-mat.git"
