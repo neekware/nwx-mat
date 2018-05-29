@@ -17,7 +17,6 @@
 // in app.component.ts
 import { Component, OnInit } from '@angular/core';
 import { MatService } from '@nwx/mat';
-import { SvgIcons } from './app.icons';
 
 export const SvgFlagIcons = [
   {
@@ -69,6 +68,11 @@ export class AppComponent implements OnInit {
 <!-- icons with namespace -->
 <mat-icon color="primary" svgIcon="flags:ca"></mat-icon>
 ```
+
+# Note
+
+This module automatically includes flex-layout module as well.
+Any module that needs angular material or angular flex-layout must import MatModule
 
 # Running the tests
 
