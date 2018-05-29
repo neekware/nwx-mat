@@ -15,15 +15,14 @@ export class MatService {
   constructor(private sanitizer: DomSanitizer, private mdIconRegistry: MatIconRegistry) {}
 
   /**
-   * Adds SVG icons within the privided namespace
+   * Loads icons with namespace
    * @param iconList list of icons
    */
   loadSvgIconsInNamespace(iconList) {
-    // export const iconList = [
     //   {
-    //     names: ['ad', 'AD'], // single name or multiple aliases
-    //     namespace: 'flags',  // namespace
-    //     path: 'assets/images/svg/flags/ad.svg' // path to icon
+    //     names: ['ca', 'CA'],
+    //     namespace: 'flags',
+    //     path: 'assets/images/svg/flags/ca.svg'
     //   },
     // ]
 
@@ -36,7 +35,7 @@ export class MatService {
   }
 
   /**
-   *
+   * Loads icons set with no namespace
    * @param iconPath path to icon set (ex: '/assets/fonts/mdi.svg')
    */
   loadSvgIconSet(iconPath: string) {
