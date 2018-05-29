@@ -20,9 +20,12 @@ import { SvgIcons } from './app.icons';
 
 export const SvgFlagIcons = [
   {
-    names: ['ca', 'CA'], // country iso & aliases
+    // country iso & aliases
+    names: ['ca', 'CA'],
+    // namespace to this icons (flags:ca)
     namespace: 'flags',
-    path: 'assets/svg/flags/ca.svg' // path to svg flag
+    // path to svg flag
+    path: 'assets/svg/flags/ca.svg'
   },
   {
     names: ['us', 'US'],
