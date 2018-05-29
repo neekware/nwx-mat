@@ -10,6 +10,7 @@ import { NgModule, Optional, SkipSelf, ModuleWithProviders } from '@angular/core
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 import 'hammerjs';
 
@@ -107,7 +108,8 @@ import { MatService } from './mat.service';
     OverlayModule,
     PlatformModule,
     PortalModule,
-    MatBadgeModule
+    MatBadgeModule,
+    FlexLayoutModule
   ],
   exports: [
     ReactiveFormsModule,
@@ -152,7 +154,8 @@ import { MatService } from './mat.service';
     OverlayModule,
     PlatformModule,
     PortalModule,
-    MatBadgeModule
+    MatBadgeModule,
+    FlexLayoutModule
   ],
   providers: [MatService]
 })
