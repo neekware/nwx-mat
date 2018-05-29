@@ -1,26 +1,16 @@
 import { TestBed, async } from '@angular/core/testing';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { CfgModule, AppCfg, CFG_OPTIONS } from '@nwx/cfg';
-
-import { LogModule } from '@nwx/logger';
-
 import { Observable, of as observableOf } from 'rxjs';
 
 import { MatModule } from 'pkgs/mat';
 
 import { AppComponent } from './app.component';
 
-const AppEnv: AppCfg = {
-  appName: '@nwx/mat',
-  production: false
-};
-
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [BrowserModule, CfgModule.forRoot(AppEnv), LogModule, MatModule],
-      providers: [{ provide: CFG_OPTIONS, useValue: AppEnv }],
+      imports: [BrowserModule, MatModule],
       declarations: [AppComponent]
     }).compileComponents();
   }));

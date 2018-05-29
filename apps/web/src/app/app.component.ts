@@ -1,7 +1,4 @@
-import { Component } from '@angular/core';
-
-import { CfgService, DefaultCfg } from '@nwx/cfg';
-import { LogService } from '@nwx/logger';
+import { Component, OnInit } from '@angular/core';
 
 import { MatService } from 'pkgs/mat';
 
@@ -10,11 +7,14 @@ import { MatService } from 'pkgs/mat';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'Neekware';
-  options = {};
-  constructor(public cfg: CfgService, public log: LogService, public mat: MatService) {
-    this.title = this.cfg.options.appName;
-    this.log.info('AppComponent loaded ...');
+  constructor(public mat: MatService) {
+    this.title = '@nwx/mat';
+    console.log('AppComponent loaded ...');
+  }
+
+  ngOnInit() {
+    this.mat.loadSvgIconSet('/assets/fonts/mdi.svg');
   }
 }

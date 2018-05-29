@@ -7,3 +7,4 @@
  */
 
 export { MatModule } from './src/mat.module';
+export { MatService } from './src/mat.service';
