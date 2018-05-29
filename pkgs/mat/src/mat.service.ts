@@ -18,10 +18,10 @@ export class MatService {
    * Adds SVG icons within the privided namespace
    * @param iconList list of icons
    */
-  loadSvgIconsWithNamespace(iconList) {
+  loadSvgIconsInNamespace(iconList) {
     // export const iconList = [
     //   {
-    //     names: ['ad', 'AD'], // various alias
+    //     names: ['ad', 'AD'], // single name or multiple aliases
     //     namespace: 'flags',  // namespace
     //     path: 'assets/images/svg/flags/ad.svg' // path to icon
     //   },
@@ -39,7 +39,7 @@ export class MatService {
    *
    * @param iconPath path to icon set (ex: '/assets/fonts/mdi.svg')
    */
-  loadSvgIconsSet(iconPath: string) {
+  loadSvgIconSet(iconPath: string) {
     const mdiSecurePath = this.sanitizer.bypassSecurityTrustResourceUrl(iconPath);
     this.mdIconRegistry.addSvgIconSet(mdiSecurePath);
   }
