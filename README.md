@@ -21,7 +21,7 @@ import { SvgIcons } from './app.icons';
 export const SvgFlagIcons = [
   {
     names: ['ca', 'CA'], // country iso & aliases
-    namespace: 'flags', // prefix
+    namespace: 'flags',
     path: 'assets/svg/flags/ca.svg' // path to svg flag
   },
   {
