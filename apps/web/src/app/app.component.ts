@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 
 import { MatService } from 'pkgs/mat';
 
+import { SvgIcons } from './app.icons';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -15,6 +17,7 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.mat.loadSvgIconSet('/assets/fonts/mdi.svg');
+    this.mat.loadSvgIconSet('/assets/svg/mdi/mdi.svg');
+    this.mat.loadSvgIconsInNamespace(SvgIcons);
   }
 }

@@ -8,6 +8,7 @@
 
 import { NgModule, Optional, SkipSelf, ModuleWithProviders } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 import 'hammerjs';
@@ -63,6 +64,7 @@ import { MatService } from './mat.service';
 @NgModule({
   imports: [
     CommonModule,
+    HttpClientModule,
     ReactiveFormsModule,
     FormsModule,
     MatAutocompleteModule,
@@ -108,7 +110,6 @@ import { MatService } from './mat.service';
     MatBadgeModule
   ],
   exports: [
-    CommonModule,
     ReactiveFormsModule,
     FormsModule,
     MatAutocompleteModule,

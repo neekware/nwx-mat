@@ -195,6 +195,10 @@
   dependencies:
     tslib "^1.9.0"
 
+"@mdi/font@^2.4.85":
+  version "2.4.85"
+  resolved "https://registry.yarnpkg.com/@mdi/font/-/font-2.4.85.tgz#f257a2c3ed1dec3023f2dc12cd9210fab572ab42"
+
 "@ngtools/json-schema@^1.1.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@ngtools/json-schema/-/json-schema-1.1.0.tgz#c3a0c544d62392acc2813a42c8a0dc6f58f86922"
@@ -206,18 +210,6 @@
     "@angular-devkit/core" "0.6.1"
     tree-kill "^1.0.0"
     webpack-sources "^1.1.0"
-
-"@nwx/cfg@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@nwx/cfg/-/cfg-1.0.0.tgz#c8085d0e5229ba3d3d8035db9d891a74e4a24498"
-  dependencies:
-    tslib "^1.9.0"
-
-"@nwx/logger@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@nwx/logger/-/logger-1.0.1.tgz#8bbaee852076587654009fa437f707ba1500e00f"
-  dependencies:
-    tslib "^1.9.0"
 
 "@schematics/angular@0.6.1":
   version "0.6.1"

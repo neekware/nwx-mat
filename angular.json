@@ -129,10 +129,7 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": [
-              "pkgs/mat/tsconfig.lib.json",
-              "pkgs/mat/tsconfig.spec.json"
-            ],
+            "tsConfig": ["pkgs/mat/tsconfig.lib.json", "pkgs/mat/tsconfig.spec.json"],
             "exclude": ["**/node_modules/**"]
           }
         }
