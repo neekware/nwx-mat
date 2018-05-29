@@ -13,6 +13,55 @@
 
 # How to use
 
+```typescript
+import { Component, OnInit } from '@angular/core';
+import { MatService } from '@nwx/mat';
+import { SvgIcons } from './app.icons';
+
+export const SvgFlagIcons = [
+  {
+    names: ['ca', 'CA'], // country iso & aliases
+    namespace: 'flags', // prefix
+    path: 'assets/svg/flags/ca.svg' // path to svg flag
+  },
+  {
+    names: ['us', 'US'],
+    namespace: 'flags',
+    path: 'assets/svg/flags/us.svg'
+  }
+];
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent implements OnInit {
+  title = 'Neekware';
+  constructor(public mat: MatService) {
+    this.title = '@nwx/mat';
+    console.log('AppComponent loaded ...');
+  }
+
+  ngOnInit() {
+    this.mat.loadSvgIconSet('/assets/svg/mdi/mdi.svg');
+    this.mat.loadSvgIconsInNamespace(SvgFlagIcons);
+  }
+}
+```
+
+```html
+<!-- material design modules -->
+<mat-toolbar>@nwx/mat</mat-toolbar>
+
+<h1> Welcome to {{ title }}!</h1>
+
+<!-- icons without namespace -->
+<mat-icon color="primary" svgIcon="github-face"></mat-icon> Github Repo
+
+<!-- icons with namespace -->
+<mat-icon color="primary" svgIcon="flags:ca"></mat-icon>
+```
 
 # Running the tests
 
