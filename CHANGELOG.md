@@ -1,3 +1,9 @@
+## 1.0.1
+
+Cleanup:
+
+  - Removed ReactiveFormsModule, FormsModule & FlexLayoutModule
+
 ## 1.0.0
 
 Release:
