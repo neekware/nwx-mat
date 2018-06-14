@@ -7,7 +7,7 @@
     Welcome to {{ title }}!
   </h1>
   <h3>
-    &rsaquo;&rsaquo; A simple configuration module for any Angular app &lsaquo;&lsaquo;
+    &rsaquo;&rsaquo; A simple shared material module for Angular applications &lsaquo;&lsaquo;
   </h3>
 
   <h3>
@@ -33,4 +33,16 @@
        rel="noopener"
        href="http://neekware.com">Neekware Inc.</a>
   </h5>
+
+  <form [formGroup]="form">
+
+    <mat-form-field>
+      <mat-icon matSuffix
+                svgIcon="account"></mat-icon>
+      <input matInput
+             formControlName="name"
+             placeholder="Name">
+    </mat-form-field>
+
+  </form>
 </div>

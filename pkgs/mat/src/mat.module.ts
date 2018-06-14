@@ -9,8 +9,6 @@
 import { NgModule, Optional, SkipSelf, ModuleWithProviders } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
-import { ReactiveFormsModule, FormsModule } from '@angular/forms';
-import { FlexLayoutModule } from '@angular/flex-layout';
 
 import 'hammerjs';
 
@@ -21,10 +19,14 @@ import { ObserversModule } from '@angular/cdk/observers';
 import { OverlayModule } from '@angular/cdk/overlay';
 import { PlatformModule } from '@angular/cdk/platform';
 import { PortalModule } from '@angular/cdk/portal';
+import { ScrollDispatchModule } from '@angular/cdk/scrolling';
+import { CdkStepperModule } from '@angular/cdk/stepper';
 import { CdkTableModule } from '@angular/cdk/table';
 import { CdkTreeModule } from '@angular/cdk/tree';
 import {
   MatAutocompleteModule,
+  MatBadgeModule,
+  MatBottomSheetModule,
   MatButtonModule,
   MatButtonToggleModule,
   MatCardModule,
@@ -32,6 +34,7 @@ import {
   MatChipsModule,
   MatDatepickerModule,
   MatDialogModule,
+  MatDividerModule,
   MatExpansionModule,
   MatFormFieldModule,
   MatGridListModule,
@@ -39,90 +42,55 @@ import {
   MatInputModule,
   MatListModule,
   MatMenuModule,
+  MatNativeDateModule,
   MatPaginatorModule,
   MatProgressBarModule,
   MatProgressSpinnerModule,
   MatRadioModule,
+  MatRippleModule,
   MatSelectModule,
   MatSidenavModule,
   MatSliderModule,
   MatSlideToggleModule,
   MatSnackBarModule,
   MatSortModule,
+  MatStepperModule,
   MatTableModule,
   MatTabsModule,
   MatToolbarModule,
   MatTooltipModule,
-  MatStepperModule,
-  MatNativeDateModule,
-  MatRippleModule,
-  MatTreeModule,
-  MatBadgeModule
+  MatTreeModule
 } from '@angular/material';
-
 import { MatService } from './mat.service';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    HttpClientModule,
-    ReactiveFormsModule,
-    FormsModule,
-    MatAutocompleteModule,
-    MatButtonModule,
-    MatButtonToggleModule,
-    MatCardModule,
-    MatCheckboxModule,
-    MatChipsModule,
-    MatTableModule,
-    MatDatepickerModule,
-    MatDialogModule,
-    MatExpansionModule,
-    MatFormFieldModule,
-    MatGridListModule,
-    MatIconModule,
-    MatInputModule,
-    MatListModule,
-    MatMenuModule,
-    MatPaginatorModule,
-    MatProgressBarModule,
-    MatProgressSpinnerModule,
-    MatRadioModule,
-    MatRippleModule,
-    MatSelectModule,
-    MatSidenavModule,
-    MatSlideToggleModule,
-    MatSliderModule,
-    MatSnackBarModule,
-    MatSortModule,
-    MatStepperModule,
-    MatTabsModule,
-    MatToolbarModule,
-    MatTooltipModule,
-    MatNativeDateModule,
-    MatTreeModule,
-    CdkTableModule,
-    CdkTreeModule,
-    BidiModule,
-    ObserversModule,
-    OverlayModule,
-    PlatformModule,
-    PortalModule,
-    MatBadgeModule,
-    FlexLayoutModule
-  ],
+  imports: [HttpClientModule, MatIconModule],
   exports: [
-    ReactiveFormsModule,
-    FormsModule,
+    // CDK
+    A11yModule,
+    BidiModule,
+    ObserversModule,
+    OverlayModule,
+    PlatformModule,
+    PortalModule,
+    ScrollDispatchModule,
+    CdkStepperModule,
+    CdkTableModule,
+    CdkTreeModule,
+    CdkAccordionModule,
+
+    // Material
     MatAutocompleteModule,
+    MatBadgeModule,
+    MatBottomSheetModule,
     MatButtonModule,
     MatButtonToggleModule,
     MatCardModule,
     MatCheckboxModule,
     MatChipsModule,
-    MatTableModule,
     MatDatepickerModule,
     MatDialogModule,
+    MatDividerModule,
     MatExpansionModule,
     MatFormFieldModule,
     MatGridListModule,
@@ -130,6 +98,7 @@ import { MatService } from './mat.service';
     MatInputModule,
     MatListModule,
     MatMenuModule,
+    MatNativeDateModule,
     MatPaginatorModule,
     MatProgressBarModule,
     MatProgressSpinnerModule,
@@ -137,25 +106,16 @@ import { MatService } from './mat.service';
     MatRippleModule,
     MatSelectModule,
     MatSidenavModule,
-    MatSlideToggleModule,
     MatSliderModule,
+    MatSlideToggleModule,
     MatSnackBarModule,
     MatSortModule,
     MatStepperModule,
+    MatTableModule,
     MatTabsModule,
     MatToolbarModule,
     MatTooltipModule,
-    MatNativeDateModule,
-    MatTreeModule,
-    CdkTableModule,
-    CdkTreeModule,
-    BidiModule,
-    ObserversModule,
-    OverlayModule,
-    PlatformModule,
-    PortalModule,
-    MatBadgeModule,
-    FlexLayoutModule
+    MatTreeModule
   ],
   providers: [MatService]
 })
