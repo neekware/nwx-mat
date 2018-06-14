@@ -1,4 +1,12 @@
-import { TestBed, async } from '@angular/core/testing';
+/**
+ * @license
+ * Copyright Neekware Inc. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at http://neekware.com/license/MIT.html
+ */
+
+ import { TestBed, async } from '@angular/core/testing';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
