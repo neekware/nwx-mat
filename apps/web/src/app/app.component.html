@@ -33,4 +33,16 @@
        rel="noopener"
        href="http://neekware.com">Neekware Inc.</a>
   </h5>
+
+  <form [formGroup]="form">
+
+    <mat-form-field>
+      <mat-icon matSuffix
+                svgIcon="account"></mat-icon>
+      <input matInput
+             formControlName="name"
+             placeholder="Name">
+    </mat-form-field>
+
+  </form>
 </div>
