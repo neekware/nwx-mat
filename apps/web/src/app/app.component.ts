@@ -27,8 +27,8 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.mat.loadSvgIconSet('/assets/svg/mdi/mdi.svg');
-    this.mat.loadSvgIconsInNamespace(SvgIcons);
+    this.mat.registerSvgIconSet('/assets/svg/mdi/mdi.svg');
+    this.mat.registerSvgIconsInNamespace(SvgIcons);
     this.buildForm();
   }
 

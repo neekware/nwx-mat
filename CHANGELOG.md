@@ -1,3 +1,9 @@
+## 2.0.1
+
+Enhancements:
+
+* Make cache busting version to be empty
+
 ## 2.0.0
 
 Enhancements:

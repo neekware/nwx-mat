@@ -18,7 +18,7 @@ export class MatService {
    * Loads icons with namespace
    * @param iconList list of icons
    */
-  registerSvgIconsInNamespace(iconList, cacheBustingHash) {
+  registerSvgIconsInNamespace(iconList, cacheBustingHash = null) {
     // [
     //   ...
     //   {
@@ -41,7 +41,7 @@ export class MatService {
    * Loads icons set with no namespace
    * @param iconPath path to icon set (ex: '/assets/fonts/mdi.svg')
    */
-  registerSvgIconSet(iconPath: string, cacheBustingHash) {
+  registerSvgIconSet(iconPath: string, cacheBustingHash = null) {
     const path = cacheBustingHash ? `${iconPath}?${cacheBustingHash}` : iconPath;
     const securePath = this.sanitizer.bypassSecurityTrustResourceUrl(iconPath);
     this.registry.addSvgIconSet(securePath);
