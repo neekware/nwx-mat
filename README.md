@@ -48,8 +48,9 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     // assuming you have your svg icons in your project asset directory
-    this.mat.loadSvgIconSet('/assets/svg/mdi/mdi.svg');
-    this.mat.loadSvgIconsInNamespace(SvgFlagIcons);
+    this.mat.registerSvgIconsInNamespace('/assets/svg/mdi/mdi.svg');
+    this.mat.registerSvgIconSet(SvgFlagIcons);
+    this.mat.registerFontClassAlias('fontawesome', 'fa');
   }
 }
 ```
